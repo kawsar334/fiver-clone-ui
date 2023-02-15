@@ -1,0 +1,111 @@
+
+@import "../../global.scss";
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+    background-color: #013914;
+    color: #fff;
+    flex-direction: column;
+    transition: all 0.1s ease;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    &.active{
+        background-color: $white;
+        color: black;
+    }
+    .container{
+        width: $mainWidth;
+        display: flex;
+        justify-content: space-between;
+
+        .logo{
+            font-size: 34px ;
+            font-weight:bold ;
+            cursor: pointer;
+            .text {}
+            
+                .dot {}
+        }
+        .links{
+            display: flex;
+            gap: 24px;
+            font-weight: 500;
+            align-items: center;
+            button{
+                color: $white;
+                padding: 10px 20px;
+                border-radius: 5px;
+                cursor: pointer;
+                background-color: transparent;
+                transition: all 1s ease;
+                border: 1px solid $white;
+                &:hover{
+                    background-color: $hover;
+                    border: $hover;
+                    // 
+                }
+                
+            }
+            span{
+                cursor: pointer;
+
+            }
+            // user section ================================
+            .user{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                cursor: pointer;
+                .userAvatar{
+                    width: 32px;
+                    height: 32px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    cursor: pointer;
+                    position: relative;
+                    transition: all 0.5s ease;
+                
+                }
+                // user options 
+                .options{
+                    width: 200px;
+                    font-weight: 600;
+                    position: absolute;
+                    top: 45px;
+                    right: 50px;
+                    padding: 20px;
+                    color: $gray;
+                    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+                    border-radius: 10px ;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px ;
+                    background-color:$white;
+                    transition: all 0.5s ease;
+
+                }
+            }
+        }
+    }
+
+    hr{
+        width: 100%;
+        height: 0;
+        border: 1px solid $border;
+        margin: 5px 0px ;
+    }
+
+    //MENU SECTION ===============================MENU
+    .menu{
+        width: $mainWidth;
+        display: flex;
+        justify-content: space-between;
+        font-weight: 600;
+        color: $gray;
+        font-size: 14px;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,104 @@
+
+@import  "../../global.scss";
+
+.featured{
+    height: 600px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $mainColor;
+    color: $white;
+    .container{
+        width: $mainWidth;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        // =============left
+        
+        .left{
+            flex: 1.5;
+            display: flex;
+            flex-direction: column;
+            h1{
+                font-size: 50px;
+                i{
+                    font-weight: 300;
+                }
+            }
+            .search{
+                display: flex;
+                align-items: center;
+                justify-content: space-between !important;
+                background-color: $white;
+                border-radius: 5px;
+                width: 100%;
+                overflow: hidden;
+
+
+                .searchInput{
+                    display: flex;
+                    align-items: center;
+                    gap:10px;
+                    width: 100%;
+                    justify-content: space-between;
+                    input{
+                        border: none;
+                        outline: none;
+                        margin-left: 10px;
+                    }
+                    .fa-magnifying-glass{
+                        font-size: 20px;
+                    }
+                    .searchbtn{
+                        height:50px;
+                        width: 120px;
+                        border: none;
+                        background-color:$btnColor ;
+                        color: $white;
+                        cursor: pointer;
+                    }
+                }
+
+
+               
+            }
+                         // ===
+                         .popular {
+                            display: flex;
+                            gap: 10px;
+                            margin-top: 10px;
+                            align-items: center;
+                            flex-wrap: wrap;
+
+
+                             span {
+                                font-weight: 600;
+                             }
+            
+                             button {
+                                border: 1px solid $white;
+                                background-color: transparent;
+                                border-radius: 5px;
+                                color:$white;
+                                padding: 5px 10px ;
+                                cursor: pointer;
+                             }
+            
+                         }
+
+        }
+        // ===============right
+        .right{
+            flex: 1;
+            height: 100%;
+            img{
+                
+                height: 100%;
+                width:100%;
+                background-color: transparent;
+
+            }
+
+        }
+    }
+}

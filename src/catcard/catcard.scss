@@ -1,0 +1,41 @@
+@import  "../global.scss";
+
+.catCard{
+    width: 252px ;
+    height: 344px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    
+    img{
+        width: 252px;
+        height: 344px;
+        object-fit: cover;
+        padding: 100px;
+        position: absolute ;
+        left: -100px;
+        border-radius: 20px;
+        top: -100px;
+
+    }
+
+    .desc{
+        font-weight: 300;
+        position: absolute;
+        top: 15px;
+        left: 10px;
+        color: $white;
+        font-size: 24px;
+        font-weight: 600;
+    }
+    .title{
+        font-weight: 300;
+        position: absolute;
+        left: 10px;
+        top: 50px;
+        color: $white;
+        font-size: 24px;
+        font-weight: 600;
+        
+    }
+}

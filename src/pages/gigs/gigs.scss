@@ -1,0 +1,98 @@
+@import "../../global.scss";
+
+
+.gigs{
+    display: flex;
+    justify-content: center;
+
+    .container{
+        width: $mainWidth;
+        padding: 38px 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        .breadcrumbs{
+            font-weight: 300;
+            font-size: 13px;
+        }
+        p{
+            color: #999;
+            font-weight: 300;
+
+        }
+        .menu{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .left{
+               display: flex;
+               align-items: center;
+               gap: 10px;
+               color: $gray; 
+               input{
+                padding: 5px;
+                border: 1px solid lightgray;
+                outline: none;
+                &::placeholder{
+                    color: lightgray;
+                }
+               }
+               button{
+                background-color: $btnColor;
+                border: none;
+                border-radius: 3px;
+                color: $white;
+                padding: 5px 10px;
+                cursor: pointer;
+               }
+
+            }
+            .right{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                position: relative;
+                .sortby{
+                    color:$gray ;
+                    font-weight: 300;
+                }
+                .sortType{
+                    font-weight: 500;
+                }
+                .fa-chevron-down{
+                    cursor: pointer;
+                }
+                .rightMenu{
+                    position: absolute;
+                    padding: 20px;
+                    background-color: $white;
+                    border-radius: 5px;
+                    border: 5px solid lightgray;
+                    top: 30px;
+                    right: 0;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    color: $gray;
+                    span{
+                        cursor: pointer;
+
+                    }
+
+                }
+
+
+            }
+        }
+
+        .cards{
+            width: $mainWidth;
+            margin: 20px auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            
+        }
+    }
+}

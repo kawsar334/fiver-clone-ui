@@ -1,0 +1,55 @@
+@import "../../global.scss";
+
+.mygigs{
+    display: flex;
+    justify-content: center;
+    .container{
+        width: $mainWidth;
+        padding: 50px 0px;
+        .title{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            button{
+                background-color: $btnColor;
+                border: 1px solid lightgray;
+                border-radius: 5px ;
+                color: $white;
+                padding: 8px;
+                cursor: pointer;
+
+            }
+        }
+
+        table{
+            width: 100%;
+
+
+            tr{
+                height: 50px;
+                
+                th{
+                    font-weight: 600;
+                    color:$gray;
+                    text-align: left;
+                }
+                td{
+                    img{
+                        width: 50px;
+                        height: 25px;
+                        object-fit: cover;
+
+                    }
+                    .fa-trash{
+                        color: crimson;
+                        font-size: 20px;
+                        cursor: pointer;
+                    }
+                }
+                &:nth-child(even){
+                    background-color:lightgray;
+                }
+            }
+        }
+    }
+}

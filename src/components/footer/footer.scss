@@ -1,0 +1,29 @@
+@import  "../../global.scss";
+
+
+.footer{
+    display: flex;
+    justify-content: center;
+    color: #999;
+    .container{
+        width: $mainWidth;
+        .top{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .item{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                cursor: pointer;
+            }
+        }
+
+        // ============bottom
+        .bottom{
+            .left{}
+            .right{}
+        }
+
+    }
+}

@@ -1,0 +1,21 @@
+
+@import "../../global.scss";
+
+.slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0px ;
+    gap: 10px ;
+    .container{
+        width: $mainWidth;
+        
+        
+    }
+}
+
+
+.carousel-next , .carousel-prev {
+     color: lightgray;
+    
+ }
