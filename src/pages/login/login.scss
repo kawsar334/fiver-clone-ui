@@ -1,0 +1,42 @@
+
+
+@import "../../global.scss";
+.login{
+     width:$mainWidth;
+     height:calc(100vh - 150px);
+     margin: 20px auto;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     gap: 20px;
+    .logintittle{
+        color: $gray;
+
+    }
+    .loginform{
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+        input{
+            padding: 10px ;
+            outline: none;
+            border: 1px solid lightgray;
+        }
+        button{
+            padding:10px;
+            background-color: $btnColor;
+            border: none;
+            border: 1px solid $btnColor;
+            color: $white;
+            cursor: pointer;
+            transition: 1s all ease;
+            &:hover{
+                background-color: transparent;
+                color: $btnColor;
+
+
+            }
+        }
+    }
+}

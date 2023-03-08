@@ -4,11 +4,11 @@ import "./navbar.scss" ;
  
 const Navbar = () => {
     const {pathname} =useLocation();
-    console.log(pathname)
     const [open, setOpen] =useState(false)
     const [active, setActive] =useState(false);
     const isActive=()=>{
-        window.scrollY > 1 ? setActive(true) : setActive(false);
+        window.scrollY > 0 ? setActive(true) : setActive(false);
+
     }
     useEffect(()=>{
         window.addEventListener("scroll",isActive );
@@ -43,7 +43,7 @@ const Navbar = () => {
                   <Link to="/">
                   <span>Engilsh</span>
                   </Link>
-                  <Link to="/">
+                  <Link to="/login">
                   <span>Signin</span>
                   </Link>
                  {!currentUser?.isSeller && <Link to="/">
